@@ -39,7 +39,7 @@ export default function Home({ product }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const price = await stripe.prices.retrieve("price_1K1faiICN214fPoT1dmaxGq3");
+  const price = await stripe.prices.retrieve("price_1L7hKtEByiJd3plPGlFCkFen");
 
   const product = {
     priceId: price.id,
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 // export const getServerSideProps: GetServerSideProps = async () => {
-//   const price = await stripe.prices.retrieve("price_1K1faiICN214fPoT1dmaxGq3", {
+//   const price = await stripe.prices.retrieve("price_1L7hKtEByiJd3plPGlFCkFen", {
 //     expand: ["product"], // informaçoes do produto
 //   });
 
